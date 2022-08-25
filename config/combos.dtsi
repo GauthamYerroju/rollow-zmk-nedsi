@@ -112,7 +112,7 @@
 
         combo_rh_left {
             timeout-ms = <50>;
-            key-positions = <15 16;
+            key-positions = <15 16>;
             bindings = <&kp LEFT>;
         };
 
