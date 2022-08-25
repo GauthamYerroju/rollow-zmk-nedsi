@@ -3,7 +3,6 @@
 #define LOWER  1
 #define RAISE  2
 #define ADJUST 3
-#define ACCENT 4
 
 //homerow
 #define HM_A &hm_asemi LSHFT A

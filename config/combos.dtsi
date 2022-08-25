@@ -62,10 +62,64 @@
             bindings = <&kp TILDE>;
         };
 
-        combo_caps_word {
+        combo_caps_word_1 {
             timeout-ms = <50>;
             key-positions = <13 16>;
             bindings = <&caps_word>;
+        };
+
+        combo_caps_word_2 {
+            timeout-ms = <50>;
+            key-positions = <10 19>;
+            bindings = <&caps_word>;
+        };
+
+        combo_lh_up {
+            timeout-ms = <50>;
+            key-positions = <3 13>;
+            bindings = <&kp UP>;
+        };
+
+        combo_lh_dn {
+            timeout-ms = <50>;
+            key-positions = <13 23>;
+            bindings = <&kp DOWN>;
+        };
+
+        combo_lh_left {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp LEFT>;
+        };
+
+        combo_lh_right {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp RIGHT>;
+        };
+
+        combo_rh_up {
+            timeout-ms = <50>;
+            key-positions = <6 16>;
+            bindings = <&kp UP>;
+        };
+
+        combo_rh_dn {
+            timeout-ms = <50>;
+            key-positions = <16 26>;
+            bindings = <&kp DOWN>;
+        };
+
+        combo_rh_left {
+            timeout-ms = <50>;
+            key-positions = <15 16;
+            bindings = <&kp LEFT>;
+        };
+
+        combo_rh_right {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp RIGHT>;
         };
     };
 };
