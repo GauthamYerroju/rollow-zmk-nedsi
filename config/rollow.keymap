@@ -60,12 +60,11 @@
 
                 adjust_layer {
                         bindings = <
-                        BT0      BT1      BT2       BT3       &bt BT_CLR      &trans &trans &trans &trans &trans
-                        &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans          &trans &kp PSCRN &kp PAUSE_BREAK &kp SLCK &kp INS
-                        &trans   &trans   &trans    &trans    &trans          &trans &trans &trans &trans &trans
-                                                &trans &trans &trans          &trans &trans &trans
+                        BT0       BT1      BT2       BT3       &bt BT_CLR      &trans &trans &trans &trans &trans
+                        &kp LSHFT &kp LALT &kp LGUI  &kp LCTL  &trans          &trans &kp PSCRN &kp PAUSE_BREAK &kp SLCK &kp INS
+                        &trans    &trans   &trans    &trans    &trans          &trans &trans &trans &trans &trans
+                                                 &trans &trans &trans          &trans &trans &trans
                         >;
                 };
         };
 };
-e wee ef  
