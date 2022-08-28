@@ -32,10 +32,10 @@
 
                 lower_layer {
                         bindings = <
-                        &kp PIPE &kp AMPS &kp LBRC &kp RBRC &kp CARET   &kp KP_EQUAL    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp PRCNT
-                        &kp EXCL &kp AT   &kp LPAR &kp RPAR &kp TILDE   &kp KP_PLUS     &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MINUS
-                        &kp DLLR &kp HASH &kp LBKT &kp RBKT &kp GRAVE   &kp KP_ASTERISK &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_SLASH
-                                                 &trans &trans &trans   &kp KP_DOT &kp KP_N0 &trans
+                        &kp PIPE &kp AMPS &kp LBRC &kp RBRC &kp CARET   &kp PRCNT &kp N7 &kp N8 &kp N9 &kp BSLH
+                        &kp EXCL &kp AT   &kp LPAR &kp RPAR &kp TILDE   &kp PLUS  &kp N4 &kp N5 &kp N6 &kp DOT
+                        &kp DLLR &kp HASH &kp LBKT &kp RBKT &kp GRAVE   &kp STAR  &kp N1 &kp N2 &kp N3 &kp FSLH
+                                                 &trans &trans &trans   &kp DEL &kp N0 &trans
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp DOWN UP>;
                 };
@@ -50,12 +50,22 @@
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp DOWN UP>;
                 };
 
+                blender_layer {
+                        bindings = <
+                        &trans &trans &trans &trans &trans      &kp PRCNT       &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp EQUAL
+                        &trans &trans &trans &trans &trans      &kp KP_PLUS     &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MINUS
+                        &trans &trans &trans &trans &trans      &kp KP_ASTERISK &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_SLASH
+                                      &trans &trans &trans      &kp KP_DOT &kp KP_N0 &trans
+                        >;
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp DOWN UP>;
+                };
+
                 adjust_layer {
                         bindings = <
-                        BT0       BT1      BT2       BT3       &bt BT_CLR      &trans &trans &trans &trans &trans
-                        &kp LSHFT &kp LALT &kp LGUI  &kp LCTL  &trans          &bootloader &kp PSCRN &kp PAUSE_BREAK &kp SLCK &kp INS
-                        &trans    &trans   &trans    &trans    &trans          &trans &trans &trans &trans &trans
-                                                 &trans &trans &trans          &trans &trans &trans
+                        BT0       BT1      BT2       BT3      &bt BT_CLR      &trans &trans &trans &trans &trans
+                        &kp LSHFT &kp LALT &kp LGUI  &kp LCTL &tog BLENDER    &kp KP_NLCK &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp INS
+                        &trans    &trans   &trans    &trans   &trans          &trans &trans &trans &trans &trans
+                                                      &trans &trans &trans    &trans &trans &trans
                         >;
                 };
         };

@@ -1,8 +1,9 @@
 // layers
-#define MAIN   0
-#define LOWER  1
-#define RAISE  2
-#define ADJUST 3
+#define MAIN    0
+#define LOWER   1
+#define RAISE   2
+#define BLENDER 4
+#define ADJUST  3
 
 //homerow
 #define HM_A &hm_asemi LSHFT A
@@ -16,8 +17,8 @@
 #define HM_J &hm_fj RCTRL J
 
 //bluetooth
-#define BT0 &bt BT_SEL 0 
-#define BT1 &bt BT_SEL 1 
-#define BT2 &bt BT_SEL 2 
-#define BT3 &bt BT_SEL 3 
-#define BT4 &bt BT_SEL 4 
+#define BT0 &bt BT_SEL 0
+#define BT1 &bt BT_SEL 1
+#define BT2 &bt BT_SEL 2
+#define BT3 &bt BT_SEL 3
+#define BT4 &bt BT_SEL 4
