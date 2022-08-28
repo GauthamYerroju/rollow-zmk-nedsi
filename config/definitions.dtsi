@@ -1,9 +1,11 @@
 // layers
 #define MAIN    0
-#define LOWER   1
-#define RAISE   2
+#define MAC     1
+#define LOWER   2
+#define RAISE   3
 #define BLENDER 4
-#define ADJUST  3
+#define ADJUST  5
+#define ADJUST_MAC  6
 
 //homerow
 #define HM_A &hm_asemi LSHFT A
@@ -11,10 +13,16 @@
 #define HM_D &hm_dk LGUI D
 #define HM_F &hm_fj LCTRL F
 
+#define HM_D_MAC &hm_dk LCTRL D
+#define HM_F_MAC &hm_fj LGUI F
+
 #define HM_SEMI &hm_asemi RSHFT SEMI
 #define HM_L &hm_sl RALT L
 #define HM_K &hm_dk RGUI K
 #define HM_J &hm_fj RCTRL J
+
+#define HM_K_MAC &hm_dk RCTRL K
+#define HM_J_MAC &hm_fj RGUI J
 
 //bluetooth
 #define BT0 &bt BT_SEL 0
